@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styling</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .h1 {
+            color: green;
+        }
+        .para2 {
+            color: orange;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Main Container -->
+     <div>
+        <!-- Inline CSS -->
+        <div>
+            <h1 style="color:red; background-color: black; text-align: center;">Inline CSS Configuration</h1>
+        </div>
+
+
+        <!-- Group Styling -->
+         <div style="color: red;">
+            <p style="color: blue;">Paragraph 1</p>
+            <p class="para2">Paragraph 2</p>
+            <p>Paragraph 3</p>
+         </div>
+
+         <div>
+            <h1 class="h1">Internal/Embedded CSS</h1>
+            <p>Paragraph 1</p>
+            <p class="para2">Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+         </div>
+
+
+         <div>
+            <h1 class="header">External CSS</h1>
+         </div>
+
+
+     </div>
 </body>
 </html>
